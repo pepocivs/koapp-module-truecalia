@@ -1,0 +1,29 @@
+<div ng-controller="truecaliaCtrl" class="module truecalia">
+
+  <div class='iframeLoading' ng-if="isBusy">
+    <div class='transitionloader'>
+    </div>
+  </div>
+
+  <koa-item ng-if="error">{{truecalia.error}}</koa-item>
+
+  <div ng-if="!error">
+    <koa-item>{{truecalia.info}}</koa-item>
+
+    <koa-grid cell-space="5px" columns="2" ng-if="!isBusy">
+      <koa-card ng-repeat="item in data" heading="{{item.route}}">
+        <div class="card-content">
+          <span class="date">{{item.date}}</span>
+          <span class="weekDay">{{item.weekDay}}</span>
+          <div style="clear: both;"></div>
+          <koa-item ng-repeat="trip in item.trips">
+            <koa-item-body two-line>
+             <div><span secondary>{{trip.time}}</span><span class="price">{{trip.price}}<span></div>
+           </koa-item-body>
+         </koa-item>
+        </div>
+      </koa-card>
+    </koa-grid>
+  </div>
+
+</div>
