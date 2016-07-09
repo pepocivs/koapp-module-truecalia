@@ -60,21 +60,33 @@
   },
   "config": [
     {
-      "type": "input",
+      "type": "select",
       "key": "from",
       "templateOptions": {
-        "description": "From",
-        "required": true,
-        "label": "From"
+        "description": "Select from where",
+        "label": "From",
+        "options": [
+          {"name": "Madrid",    "value": "mad" },
+          {"name": "Valencia",  "value": "vlc" },
+          {"name": "Córdoba",   "value": "cor" },
+          {"name": "Barcelona", "value": "bcn" },
+          {"name": "Granada",   "value": "gra" }
+        ]
       }
     },
     {
-      "type": "input",
+      "type": "select",
       "key": "to",
       "templateOptions": {
-        "description": "To",
-        "required": true,
-        "label": "To"
+        "description": "Select to where",
+        "label": "To",
+        "options": [
+          {"name": "Madrid",    "value": "mad" },
+          {"name": "Valencia",  "value": "vlc" },
+          {"name": "Córdoba",   "value": "cor" },
+          {"name": "Barcelona", "value": "bcn" },
+          {"name": "Granada",   "value": "gra" }
+        ]
       }
     },
     {
