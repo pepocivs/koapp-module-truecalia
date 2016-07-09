@@ -1,0 +1,118 @@
+{
+  "name": "Truecalia Info",
+  "identifier": "truecalia",
+  "icon": "flight-takeoff",
+  "type": "A",
+  "version": "1.0.0",
+  "author": "PepoCivs",
+  "description": {
+    "es-ES" : "",
+    "en-US" : ""
+  },
+  "descriptionShort": {
+    "es-ES" : "",
+    "en-US" : ""
+  },
+  "documentation": {
+    "es-ES": "",
+    "en-US": ""
+  },
+  "category": [
+    "social"
+  ],
+  "platforms" : [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "price": 0,
+  "canContain": false,
+  "images" : {
+    "list" : "modules/truecalia/images/truecalia_list.png",
+    "screenshots" : [
+      "modules/truecalia/images/truecalia_screenshot.png",
+      "modules/truecalia/images/truecalia_screenshot2.png"
+    ],
+    "popover" : "modules/truecalia/images/truecalia_popover.png",
+    "banner" : "modules/truecalia/images/truecalia_popover.png",
+    "logo" : "modules/truecalia/images/truecalia_icon.png"
+  },
+  "showOn": {
+    "menu": true,
+    "market": true,
+    "dragDrop": true
+  },
+  "requires": {},
+  "canContain": false,
+  "searchable": true,
+  "view": "modules/truecalia/index.html",
+  "files": [
+    "modules/truecalia/controller.js",
+    "modules/truecalia/style.css"
+  ],
+  "libs": [],
+  "scope": {
+    "from": "mad",
+    "to": "vlc",
+    "weeks": "4",
+    "firstDay": "friday",
+    "nDays": "2"
+  },
+  "config": [
+    {
+      "type": "input",
+      "key": "from",
+      "templateOptions": {
+        "description": "From",
+        "required": true,
+        "label": "From"
+      }
+    },
+    {
+      "type": "input",
+      "key": "to",
+      "templateOptions": {
+        "description": "To",
+        "required": true,
+        "label": "To"
+      }
+    },
+    {
+      "type": "input",
+      "key": "weeks",
+      "templateOptions": {
+        "description": "Weeks",
+        "pattern": "^[0-9]+$",
+        "required": false,
+        "label": "Weeks"
+      }
+    },
+    {
+      "type": "select",
+      "key": "firstDay",
+      "templateOptions": {
+        "description": "Select next day to get Trips",
+        "label": "Next day to search",
+        "options": [
+          {"name": "Monday",    "value": "monday" },
+          {"name": "Tuesday",   "value": "tuesday" },
+          {"name": "Wednesday", "value": "wednesday" },
+          {"name": "Thrusday",  "value": "thrusday" },
+          {"name": "Friday",    "value": "friday" },
+          {"name": "Saturday",  "value": "saturday" },
+          {"name": "Sunday",    "value": "sunday" }
+        ]
+      }
+    },
+    {
+      "type": "input",
+      "key": "nDays",
+      "templateOptions": {
+        "description": "Number of days to get back",
+        "pattern": "^[0-9]+$",
+        "required": false,
+        "label": "Number of days to get back"
+      }
+    }
+  ]
+}
