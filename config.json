@@ -4,7 +4,7 @@
   "icon": "flight-takeoff",
   "type": "A",
   "version": "1.0.0",
-  "author": "King of App",
+  "author": "PepoCivs",
   "description": {
     "es-ES" : "",
     "en-US" : ""
@@ -42,9 +42,7 @@
     "market": true,
     "dragDrop": true
   },
-  "requires": {
-    "out": ["wpsinglepro"]
-  },
+  "requires": {},
   "canContain": false,
   "searchable": true,
   "view": "modules/truecalia/index.html",
